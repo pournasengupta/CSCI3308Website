@@ -2,37 +2,52 @@
 
 <!DOCTYPE html>
 <html lang="en">
+  <link href="https://pournasengupta.github.io/css/my_style.css"  
+  type="text/css" 
+  rel="stylesheet">
 <!--HEAD-->
   <head class="formHead">
-    <title>Forms</title>
+    <title>Projects</title>
 
+    
     <meta charset="UTF-8"
           name="viewport" 
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!--Images-->
     <link rel="headshot"
-          href="/Users/pournasengupta/Dropbox/Fall2020/CSCI3308/homework1/headshot.png" 
+          href="https://pournasengupta.github.io/images/headshot.png" 
           type="image">
     <link rel="culture"
-          href="/Users/pournasengupta/Dropbox/Fall2020/CSCI3308/homework1/culture" 
+          href="https://pournasengupta.github.io/images/culture.jpg" 
           type="image">   
     <link rel="nature"
-          href="/Users/pournasengupta/Dropbox/Fall2020/CSCI3308/homework1/natures" 
+          href="https://pournasengupta.github.io/images/natures.jpg" 
           type="image"> 
     <link rel="art"
-          href="/Users/pournasengupta/Dropbox/Fall2020/CSCI3308/homework1/art" 
-          type="image">  
-
+          href="https://pournasengupta.github.io/images/art.jpg" 
+          type="image"> 
+    <link rel="art"
+          href="https://pournasengupta.github.io/images/linkedin.png" 
+          type="image"> 
+    
+    <!--Pages-->
+    <link rel="homepage"
+          href="https://pournasengupta.github.io/mypage_bootstrap.html"
+          type="link">
+    <link rel="formpage"
+          href="https://pournasengupta.github.io/form.html"
+          type="link">
+    <link rel="projectpage"
+          href="https://pournasengupta.github.io/project.html"
+          type="link">
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" 
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" 
           integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" 
           crossorigin="anonymous">
-    <link href="/Users/pournasengupta/Dropbox/Fall2020/CSCI3308/homework1/css/my_style.css" 
-          type="text/css" 
-          rel="stylesheet">
+ 
     <link rel="stylesheet" 
           href="https://www.w3schools.com/w3css/4/w3.css">
 
@@ -57,35 +72,37 @@
 
   <!--HEAD-->
   <body class="formBody">
-<!--Navigation Buttons-->
+
+    
+    <!--Navigation Buttons-->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="https://github.com/pournasengupta/csci3308Labs.git">
-        <img class="rounded-circle" src="file:///Users/pournasengupta/Dropbox/Fall2020/CSCI3308/homework1/headshot.png" alt="" width="30" height="30">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-  
-  <!--Navigation Options-->
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav mr-auto">
-  
-  <!--Home Button-->
-  <li class="nav-item active">
-      <a class="nav-link" href="mypage_bootstrap.html">Home</a>
-    </li>
-  
-  <!--Projects Button-->
-          <li class="nav-item active">
-            <a class="nav-link" href="project.html">Projects</a>
-          </li>
-  
-  <!--Form Button-->
-          <li class="nav-item active">
-            <a class="nav-link" href="form.html">Form</a>
-          </li>
-        </ul>
-    </nav>
+  <a class="navbar-brand" href="https://pournasengupta.github.io/">
+    <img class="rounded-circle" src="https://pournasengupta.github.io/images/headshot.png" alt="" width="30" height="30">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+<!--Navigation Options-->
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+
+<!--Home Button-->
+<li class="nav-item active">
+  <a class="nav-link" href="https://pournasengupta.github.io/mypage_bootstrap.html">Home</a>
+</li>
+
+<!--Projects Button-->
+      <li class="nav-item active">
+        <a class="nav-link" href="https://pournasengupta.github.io/project.html">Projects</a>
+      </li>
+
+<!--Form Button-->
+      <li class="nav-item active">
+        <a class="nav-link" href="https://pournasengupta.github.io/form.html">Form</a>
+      </li>
+    </ul>
+</nav>
 
     <br>
     <!--Title-->
@@ -121,10 +138,39 @@
 
 <!--Home Button-->
          <div class="buttons" style="text-align: center;">
-            <button type="home" style="background-color: powderblue" onclick="document.location='/Users/pournasengupta/Dropbox/Fall2020/CSCI3308/homework1/mypage_bootstrap.html'">
+            <button type="home" style="background-color: powderblue" onclick="document.location='https://pournasengupta.github.io/mypage_bootstrap.html'">
                     Home
             </button>
          </div>  
+
+ <!--Carousel-->
+
+ <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner" style="">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="file:///Users/pournasengupta/Dropbox/Fall2020/CSCI3308/pournasengupta.github.io/headshot.png" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src=".../800x400?auto=yes&bg=666&fg=444&text=Second slide" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src=".../800x400?auto=yes&bg=555&fg=333&text=Third slide" alt="Third slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
 
      <!--Footer, LinkedIn Link-->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
