@@ -214,3 +214,10 @@
   	margin-right: auto;
   	width: 50%;
 }
+
+.carousel-caption, .carousel-item{
+	color: black; 
+	background: powderblue; 
+	font-family: 'Gabriela'; 
+	font: "Gabriela"; 
+}

@@ -130,9 +130,17 @@
   </div>
 
   <div class="dropdown" id="tweets" style="text-align: left;">
-      <legend class="col-form-label col-sm-2 pt-0 title" style="font-size: large;">Upload a File</legend>
+
+      <legend class="col-form-label col-sm-2 pt-0 title" style="font-size: large;"> Upload a File
+      <form action="" style="text-align: center;">
+        <input type="file" id="myFile" name="filename">
+        <input type="submit">
+      </form>
+    </legend>
+
+      <legend class="col-form-label col-sm-2 pt-0 title">Number of Tweets</legend>
       <div class="col-sm-10">
-          <select name="tweetnum" id="tweets" class="dropdown custom-select-sm">
+          <select name="tweetnum" id="tweets" class="dropdown custom-select-sm col-form-label col-sm-2 pt-0 title" style="font-size: large;">
             <option selected="">Select Number of Tweets</option>
             <option value="1">1</option>
             <option value="2">2</option>
