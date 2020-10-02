@@ -76,7 +76,7 @@
 <!--Navigation Buttons-->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="https://github.com/pournasengupta/pournasengupta.github.io.git">
-    <img class="rounded-circle" src="https://pournasengupta.github.io/images/github.jpg" alt="" width="30" height="30" style="text-align=right">
+    <img class="rounded-circle" src="https://pournasengupta.github.io/images/github.jpg" alt="" width="30" height="30" style="text-align:right">
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -113,7 +113,7 @@
     <form action="form.html">
         <!--Interest Name-->
         <div class="form-group row">
-            <label class="col-sm-2 col-form-label title" style="font-size: large;" for="interest">Interest Name</label> 
+            <label class="col-sm-2 col-form-label title" style="font-size:large" for="interest">Interest Name</label> 
             <div class="col-sm-10">
                 <input type="text" class="form-control" name="interest" id="interestname" placeholder="Enter Interest">
             </div>
@@ -121,7 +121,7 @@
 
         <!--Enter Text About Interest-->
         <div class="form-group row">
-            <label class="col-sm-2 col-form-label title" for="interesttext" style="font-size: large;">Text About Interest</label> 
+            <label class="col-sm-2 col-form-label title" for="interesttext" style="font-size:large">Text About Interest</label> 
             <div class="col-sm-10">
                 <input type="text" class="form-control" name="interesttext" id="aboutInterest" placeholder="About Interest">
             </div>
@@ -207,19 +207,20 @@
                   color: black;">
                         Sign in
                   </button>
-                  <a class="buttons" style="font-size: 30px;
-                        border-color: black; 
-                        background-color: powderblue;
-                        color: black;
-                        href='register.html';">
-                        Register
+                  <div class="buttons" style="font-size: 30px;
+                  border-color: black; 
+                  background-color: powderblue;
+                  color: black;">
+                  <a 
+                        href= "">Register
                   </a>
                         <p class="mt-5 mb-3 text-muted"></p>
+                  </div>
                   </div>
             </form>
                   
       <!--Submit Button-->
-      <div class="buttons" style="text-align: center;">
+      <div class="buttons" style="text-align: center">
             <button type="submit" style="background-color: powderblue" onclick="document.location='https://pournasengupta.github.io/mypage_bootstrap.html'">
                     Submit
             </button>
