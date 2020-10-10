@@ -101,6 +101,16 @@
           <a class="nav-link" href="https://pournasengupta.github.io/form.html">Form</a>
         </li>
       </ul>
+<!--Sign Up Modal Button--> 
+    <li class="nav-item active">
+      <a class="nav-link" href="https://pournasengupta.github.io/login.html">Sign Up Modal</a>
+    </li>
+    </ul>  
+<!--Tic Tac Toe Button--> 
+    <li class="nav-item active">
+      <a class="nav-link" href="https://pournasengupta.github.io/tic-tac-toe.html">Tic-Tac-Toe Game</a>
+    </li>
+    </ul>    
   </nav>
 
 
@@ -166,61 +176,70 @@
 
 
 
-    <!--My Interests-->
-    <h3 class="title"> My Interests</h3>
+        <!--My Interests-->
+        <h3 class="title"> My Interests</h3>
 
-    <!--Change the list of your "Interests" into a horizontal list of 3 cards, 
-        one for each interest. In each card, include an image that represents 
-        the interest, a title of the interest, and why you like the interest.-->
-
-     <div class="row">
-         <div class="col">
-             <!--CULTURE CARD-->
-            <div class="card" style="width: 18rem; height: 24rem;">
-               <img class="card center" src="https://pournasengupta.github.io/images/culture.jpg" 
-               alt="Culture Card Image"> 
-            </div>  
-            <br>            
-
-               <h4 class="section">--CULTURE--</h4>
-               <p class="subtitles">As I've grown older, I've connected
-                   a lot more with my Indian background. As a second generation
-                   child of two immigrant parents, I've found it really important 
-                   to stay in touch with my roots and culture, especially to stay 
-                   close with my family.</p>  
-        </div>
-
-        <div class="col">
-             <!--NATURE CARD-->
-            <div class="card" style="width: 18rem; height: 24rem;">
-                <img class="card center" src="https://pournasengupta.github.io/images/natures.jpg" alt="Nature Card Image">
+        <!--Change the list of your "Interests" into a horizontal list of 3 cards, 
+            one for each interest. In each card, include an image that represents 
+            the interest, a title of the interest, and why you like the interest.-->
+    
+         <div class="row">
+             <div class="col">
+                 <!--CULTURE CARD-->
+                <div class="card" id = "culture" style="width: 18rem; height: 24rem;">
+                  <img class="card" src="https://pournasengupta.github.io/images/culture.jpg" 
+                   alt="Culture Card Image"> 
+                   <div class="container">
+                     <h4 class = "section"> <b> CULTURE </b> </h4>
+                    <p>As I've grown older, I've connected
+                      a lot more with my Indian background. As a second generation
+                      child of two immigrant parents, I've found it really important 
+                      to stay in touch with my roots and culture, especially to stay 
+                      close with my family.</p>
+                      <button class="btn btn-primary btn-circle btn-sm" onclick="addCard('culture')">
+                        +
+                      </button> 
+                    </div>
+                </div>  
             </div>
-            <br>
-
-                <h4 class="section">--NATURE--</h4>
-                <p class="subtitles"> Some of my best memories have been in nature, 
-                    especially with my dog. I enjoy the freedom and brief break from 
-                    school and technology.I enjoy camping with my friends often to 
-                    take a quick break from school. </p> 
-        </div>
-             
-        <div class="col">
-             <!--ART CARD-->
-             <div class="card center" style="width: 18rem; height: 24rem;">
-                <img class="card" src="https://pournasengupta.github.io/images/art.jpg" alt="Art Card Image">
-             </div>
-             <br>
-
-                <h4 class="section">--ART--</h4>
-                <p class="subtitles">Though I'm still building my skills, I have learned 
-                    a lot of different art mediums. I knit, embrioder, paint, play music/sing, model, take pictures, 
-                and sketch. I also believe programming is a form of art I practice as well. I'm always looking for new things to learn and get better at. I find 
-                satisfaction in seeing my skills and art grow better and more technical 
-                with practice. </p> 
-        </div>
-
-     </div>
-
+    
+            <div class="col">
+              <!--NATURE CARD-->
+             <div class="card" id = "nature" style="width: 18rem; height: 24rem;">
+               <img class="card" src="https://pournasengupta.github.io/images/natures.jpg" 
+                alt="Nature Card Image"> 
+                <div class="container">
+                  <h4 class = "section"> <b> NATURE </b> </h4>
+                 <p>Some of my best memories have been in nature, 
+                  especially with my dog. I enjoy the freedom and brief break from 
+                  school and technology.I enjoy camping with my friends often to 
+                  take a quick break from school. </p>
+                 </div>
+                 <button class="btn btn-primary btn-circle btn-sm" onclick="addCard('nature')">
+                  +
+                </button> 
+             </div>  
+            </div>
+    
+            <div class="col">
+              <!--ART CARD-->
+             <div class="card" id = "art" style="width: 18rem; height: 24rem;">
+               <img class="card" src="https://pournasengupta.github.io/images/art.jpg" 
+                alt="Art Card Image"> 
+                <div class="container">
+                  <h4 class = "section"> <b> ART </b> </h4>
+                 <p>Though I'm still building my skills, I have learned 
+                  a lot of different art mediums. I knit, embrioder, paint, play music/sing, model, take pictures, 
+              and sketch. I also believe programming is a form of art I practice as well. I'm always looking for new things to learn and get better at. I find 
+              satisfaction in seeing my skills and art grow better and more technical 
+              with practice. </p>
+                 </div>
+                 <button class="btn btn-primary btn-circle btn-sm" onclick="addCard('art')">
+                  +
+                </button> 
+             </div>  
+            </div>
+         </div>
      <!--Add Interest Button-->
      <div class="buttons" style="text-align: center;">
         <button type="submit" style="background-color: powderblue;" onclick="document.location='https://pournasengupta.github.io/form.html'">
