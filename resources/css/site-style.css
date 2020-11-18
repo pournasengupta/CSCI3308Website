@@ -1,0 +1,48 @@
+.site{
+    font-family: 'Gabriela'; 
+    font: 'Gabriela'; 
+    height: 100%; 
+    padding: 5px; 
+    margin: 10px; 
+    background-color: #edeae5;
+}
+.nav-bar{
+    font: "Gabriela";
+    color: white;
+}
+
+
+.title, .subtitle{
+    font: "Gabriela";
+    text-align: center; 
+    color: black;
+}
+
+.info-card, .img-card, .projects-grid, .projects-table, .interests{
+    font: "Gabriela";
+    text-align: center; 
+    color: black;
+    padding: 8px; 
+    text-align: left; 
+    border: #fce181;
+    border-width: 5px;
+    background-color: #fef9c7;
+}
+
+.img-card{
+    height: 600px; 
+}
+
+.img{
+    width: 18rem; 
+    height: 24rem; 
+}
+
+
+.submit{
+    font-size: larger;
+    border-width: 3px;
+    border-color: #fce181;
+    background-color: #fef9c7;
+    color: #026670;
+}

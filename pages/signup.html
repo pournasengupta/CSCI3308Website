@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html>
+   <!--Sign-Up Modal Page Header-->
+   <head>
+        <title>Sign-Up Modal</title>
+
+        <meta charset="UTF-8"
+            name="viewport" 
+            content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!--Images-->
+        <link rel="headshot" 
+            href="https://pournasengupta.github.io/images/headshot.png" 
+            type="image">
+        <link rel="culture"
+            href="https://pournasengupta.github.io/images/culture.jpg" 
+            type="image">   
+        <link rel="nature"
+            href="https://pournasengupta.github.io/images/natures.jpg" 
+            type="image"> 
+        <link rel="art"
+            href="https://pournasengupta.github.io/images/art.jpg" 
+            type="image"> 
+        <link rel="art"
+            href="https://pournasengupta.github.io/images/linkedin.png" 
+            type="image"> 
+
+        <!--Pages-->
+        <link rel="homepage"
+            href="https://pournasengupta.github.io/home.html"
+            type="link">
+        <link rel="formpage"
+            href="https://pournasengupta.github.io/interests.html"
+            type="link">
+        <link rel="projectpage"
+            href="https://pournasengupta.github.io/projects.html"
+            type="link">
+        <link rel="loginpage"
+            href="https://pournasengupta.github.io/signup.html"
+            type="link">
+        <link rel="tictactoe"
+            href="https://pournasengupta.github.io/tic-tac-toe.html"
+            type="link">
+        <link rel="flickrAPI"
+            href="https://pournasengupta.github.io/flickr.html"
+            type="link">
+            
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" 
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" 
+            integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" 
+            crossorigin="anonymous">
+
+        <link rel="stylesheet" 
+            href="https://www.w3schools.com/w3css/4/w3.css">
+
+        <!--MaxCDN from w3 schools-->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        
+        <!--Fonts-->
+        <link href='https://fonts.googleapis.com/css?family=Gabriela' rel='stylesheet'>
+        <!--Font Awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        
+        <!--Local Style Sheets-->
+        <link href='https://pournasengupta.github.io/resources/css/site-style.css' rel='stylesheet'>
+        <link href='https://pournasengupta.github.io/resources/css/signup.css' rel='stylesheet'>
+    </head> 
+
+   <!--Sign-Up Modal Page Body-->
+   <body class="site">
+       <!--Navigation Bar-->
+       <nav class="nav-bar">
+           <div class="w3-bar" style="background-color: #026670">
+               <a href="https://pournasengupta.github.io/pages/home.html" class="w3-bar-item w3-button"> Home </a>
+               <a href="https://pournasengupta.github.io/pages/signup.html" class="w3-bar-item w3-button"> Sign-Up </a>
+               <a href="https://pournasengupta.github.io/pages/projects.html" class="w3-bar-item w3-button"> Projects </a>
+               <a href="https://pournasengupta.github.io/pages/interests.html" class="w3-bar-item w3-button"> Interests </a>
+               <a href="https://pournasengupta.github.io/pages/tictactoe.html" class="w3-bar-item w3-button"> Tic-Tac-Toe </a>
+               <a href="https://pournasengupta.github.io/pages/flickr.html" class="w3-bar-item w3-button"> Flickr Search </a>
+           </div>
+       </nav>
+        <!-- Sign-Up Modal Page Container -->
+        <div class="w3-container w3-content" style="max-width:1400px;margin-top:80px; background-color: #edeae5;">   
+            <h1 class="title"><b>Sign-Up Modal</b></h1> 
+            <h2 class="subtitle"><b>Homework 2</b></h2>
+    
+            <hr>
+            
+            <!-- Grid -->
+            <div class="w3-row">
+                <!-- Sign-Up Modal Button-->
+                <div class="button">
+                    <a href="#signup-modal" data-toggle="modal" onclick="openModal()">
+                    Sign-Up</a>
+                </div>
+            </div>
+
+            <!-- Sign-Up Modal -->
+            <div id="signup-modal" class="modal fade">
+                <div class="modal-dialog modal-login">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div class="avatar">
+                                <img src="https://www.tutorialrepublic.com/examples/images/avatar.png" alt="Avatar">
+                            </div>
+                            <h4 class="modal-title">Sign Up page</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="firstName" placeholder="First Name"
+                                    required="required">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="lastName" placeholder="Last Name"
+                                    required="required">
+                            </div>
+                            <div class="form-group">
+                                <input id="psw" type="password" class="form-control" name="password" placeholder="Password"
+                                    required="required">
+                            </div>
+                            <div class="form-group">
+                                <input id="cpsw" type="password" class="form-control" name="confirm password"
+                                    placeholder="Confirm Password" required="required">
+                            </div>
+                            <div class="form-group">
+                                <button id="my_submit_button" class="btn btn-primary btn-block login-btn" disabled
+                                    onClick="onClickFunction()">Sign Up</button>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <div id="message" style="display:block">
+                                <h3>Password must contain the following:</h3>
+                                <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                                <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+                                <p id="number" class="invalid">A <b>number</b></p>
+                                <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+                                <p id="match" class="invalid">Password and Confirm Password Match</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--Footer, LinkedIn Link-->
+        <nav class="nav-bar navbar-expand-lg">
+            <footer style="text-align: center; background-color: #026670"> 
+                <a class="footer" href="https://www.linkedin.com/in/pournasengupta" style="text-align: center;">
+                    <img class="rounded-circle" src="https://pournasengupta.github.io/images/linkedin.png" alt="" width="30" height="30" style="text-align: right;">
+                </a>
+            </footer>
+        </nav>  
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <!--Local JS-->
+        <script src="https://pournasengupta.github.io/js/signup.js"></script>
+    </body>
+
+</html>

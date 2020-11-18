@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html>
+   <!--Interests Page Header-->
+   <head>
+        <title>Interests</title>
+
+        <meta charset="UTF-8"
+            name="viewport" 
+            content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+            
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" 
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" 
+            integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" 
+            crossorigin="anonymous">
+
+        <link rel="stylesheet" 
+            href="https://www.w3schools.com/w3css/4/w3.css">
+
+        <!--MaxCDN from w3 schools-->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        
+        <!--Fonts-->
+        <link href='https://fonts.googleapis.com/css?family=Gabriela' rel='stylesheet'>
+        <!--Font Awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        
+        <!--Local Style Sheets-->
+        <link href='https://pournasengupta.github.io/resources/css/site-style.css' rel='stylesheet'>
+    </head> 
+
+   <!--Interests Page Body-->
+   <body class="site">
+       <!--Navigation Bar-->
+       <nav class="nav-bar">
+           <div class="w3-bar" style="background-color: #026670">
+               <a href="https://pournasengupta.github.io/pages/home.html" class="w3-bar-item w3-button"> Home </a>
+               <a href="https://pournasengupta.github.io/pages/signup.html" class="w3-bar-item w3-button"> Sign-Up </a>
+               <a href="https://pournasengupta.github.io/pages/projects.html" class="w3-bar-item w3-button"> Projects </a>
+               <a href="https://pournasengupta.github.io/pages/interests.html" class="w3-bar-item w3-button"> Interests </a>
+               <a href="https://pournasengupta.github.io/pages/tictactoe.html" class="w3-bar-item w3-button"> Tic-Tac-Toe </a>
+               <a href="https://pournasengupta.github.io/pages/flickr.html" class="w3-bar-item w3-button"> Flickr Search </a>
+           </div>
+       </nav>
+        <!-- Interests Page Container -->
+        <div class="w3-container w3-content" style="max-width:1400px;margin-top:80px; background-color: #edeae5;">   
+            <h1 class="title"><b>Interests</b></h1>     
+            <hr>
+        
+            <form>
+                <!-- Grid -->
+                <div class="w3-row">
+                    <div class="interests add-interest">
+                        <div>
+                            <label for="name">Interest Name</label> 
+                            <input type="text" class="form-control" id="name" placeholder="Ex. Hiking">
+                        </div>
+                        <div>
+                            <label for="about">About Interest</label> 
+                            <textarea class="form-control" id="about" rows="2"></textarea>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+                <br>
+                <div class="w3-row">
+                    <!-- Row 2 Left Column -->
+                    <div class="w3-col m6" style="padding-right: 5px;">
+                        <div class="interests w3-card" style="height: 110;">
+                            <label for="upload">Upload Image</label>
+                            <input type="file" class="form-control-file" id="upload">
+                        </div> 
+                    </div>
+                    <!-- Row 2 Right Column -->
+                    <div class="w3-col m6" style="padding-left: 5px;">
+                        <div class="interests w3-card" style="height: 121px;">
+                            <label for="tweets"> Select Number of Tweets</label>
+                            <select class="form-control" id="tweets">
+                                <option>---</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div> 
+                    </div>
+                </div>
+                <br>
+                <div class="w3-row">
+                    <!-- Row 3 Left Column -->
+                    <div class="w3-col m6" style="padding-right: 5px;">
+                        <div class="interests w3-card form-row" style="height: 150px;">
+                            <label for="scale">On a scale of 1-5, how interested in this are you?</label><br>
+                            <br>
+                            <div>
+                                <label id="scale" class="radio-inline"> 1 
+                                    <input style="margin-left:10px; margin-right:3px;" type="radio" name="optradio" checked>
+                                </label>
+                                <label class="radio-inline"> 2
+                                    <input style="margin-left:10px; margin-right:3px;" type="radio" name="optradio">
+                                </label>
+                                <label class="radio-inline"> 3
+                                    <input style="margin-left:10px; margin-right:3px;" type="radio" name="optradio">
+                                </label>
+                                <label class="radio-inline"> 4
+                                    <input style="margin-left:10px; margin-right:3px;" type="radio" name="optradio">
+                                </label>
+                                <label class="radio-inline"> 5
+                                    <input style="margin-left:10px; margin-right:3px;" type="radio" name="optradio">
+                                </label>
+                            </div>
+                        </div> 
+                    </div>
+                    <!-- Row 3 Right Column -->
+                    <div class="w3-col m6" style="padding-left: 5px;">
+                        <div class="interests w3-card" style="height: 150px;">
+                            <label for="login"> Login</label>
+                            <input type="text" class="form-control" id="login" placeholder="username">
+                            <input type="text" class="form-control" id="login" placeholder="password">
+                        </div> 
+                    </div>
+                </div>
+                <br>
+                <div class="w3-row">
+                    <button type="submit" class="submit"> Submit </button>
+                </div>
+            </form>
+        </div>
+        <br>
+        <!--Footer, LinkedIn Link-->
+        <nav class="nav-bar navbar-expand-lg">
+            <footer style="text-align: center; background-color: #026670"> 
+                <a class="footer" href="https://www.linkedin.com/in/pournasengupta" style="text-align: center;">
+                    <img class="rounded-circle" src="https://pournasengupta.github.io/images/linkedin.png" alt="" width="30" height="30" style="text-align: right;">
+                </a>
+            </footer>
+        </nav>  
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+
+</html>

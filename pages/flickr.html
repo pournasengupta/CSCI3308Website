@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+   <!--Flickr Search Page Header-->
+   <head>
+        <title>Flickr Search</title>
+
+        <meta charset="UTF-8"
+            name="viewport" 
+            content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+            
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" 
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" 
+            integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" 
+            crossorigin="anonymous">
+
+        <link rel="stylesheet" 
+            href="https://www.w3schools.com/w3css/4/w3.css">
+
+        <!--MaxCDN from w3 schools-->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        
+        <!--Fonts-->
+        <link href='https://fonts.googleapis.com/css?family=Gabriela' rel='stylesheet'>
+        <!--Font Awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        
+        <!--Local Style Sheets-->
+        <link href='https://pournasengupta.github.io/resources/css/site-style.css' rel='stylesheet'>
+    </head> 
+
+   <!--Flickr Search Page Body-->
+   <body class="site">
+       <!--Navigation Bar-->
+       <nav class="nav-bar">
+           <div class="w3-bar" style="background-color: #026670">
+               <a href="https://pournasengupta.github.io/pages/home.html" class="w3-bar-item w3-button"> Home </a>
+               <a href="https://pournasengupta.github.io/pages/signup.html" class="w3-bar-item w3-button"> Sign-Up </a>
+               <a href="https://pournasengupta.github.io/pages/projects.html" class="w3-bar-item w3-button"> Projects </a>
+               <a href="https://pournasengupta.github.io/pages/interests.html" class="w3-bar-item w3-button"> Interests </a>
+               <a href="https://pournasengupta.github.io/pages/tictactoe.html" class="w3-bar-item w3-button"> Tic-Tac-Toe </a>
+               <a href="https://pournasengupta.github.io/pages/flickr.html" class="w3-bar-item w3-button"> Flickr Search </a>
+           </div>
+       </nav>
+        <!-- Flickr Search Container -->
+        <div class="w3-container w3-content" style="max-width:1400px;margin-top:80px; background-color: #edeae5;">   
+            <h1 class="title"><b>Flickr Search</b></h1> 
+            <h2 class="subtitle"><b>Homework 4</b></h2>            
+            <hr>
+            <h1>Photo Gallery</h1>
+            <div class="dropdown">
+
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Number of Images
+                </button>
+                <div id='drop' class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" numImages = 30>30</a>
+                <a class="dropdown-item" numImages = 30>50</a>
+                <a class="dropdown-item" numimages = 30>70</a>
+                </div>
+            </div>
+
+
+
+                <div class="form-group">
+                <label for="exampleFormControlTextarea1">Image filters</label>
+                <textarea id='filter' class="form-control" id="exampleFormControlTextarea1" rows="3" name="tags"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary"  id="submit">Submit</button>
+            
+            <div id="flickr">
+
+            </div>
+
+        </div>
+        <br>
+        <!--Footer, LinkedIn Link-->
+        <nav class="nav-bar navbar-expand-lg">
+            <footer style="text-align: center; background-color: #026670"> 
+                <a class="footer" href="https://www.linkedin.com/in/pournasengupta" style="text-align: center;">
+                    <img class="rounded-circle" src="https://pournasengupta.github.io/images/linkedin.png" alt="" width="30" height="30" style="text-align: right;">
+                </a>
+            </footer>
+        </nav>  
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <!--Local JS-->
+        <script src="https://pournasengupta.github.io/js/flickr.js"></script>
+    </body>
+
+</html>

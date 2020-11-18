@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html>
+   <!--Tic-Tac-Toe Page Header-->
+   <head>
+        <title>Tic-Tac-Toe</title>
+
+        <meta charset="UTF-8"
+            name="viewport" 
+            content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+            
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" 
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" 
+            integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" 
+            crossorigin="anonymous">
+
+        <link rel="stylesheet" 
+            href="https://www.w3schools.com/w3css/4/w3.css">
+
+        <!--MaxCDN from w3 schools-->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        
+        <!--Fonts-->
+        <link href='https://fonts.googleapis.com/css?family=Gabriela' rel='stylesheet'>
+        <!--Font Awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        
+        <!--Local Style Sheets-->
+        <link href='https://pournasengupta.github.io/resources/css/site-style.css' rel='stylesheet'>
+    </head> 
+
+   <!--Tic-Tac-Toe Page Body-->
+   <body class="site">
+       <!--Navigation Bar-->
+       <nav class="nav-bar">
+           <div class="w3-bar" style="background-color: #026670">
+               <a href="https://pournasengupta.github.io/pages/home.html" class="w3-bar-item w3-button"> Home </a>
+               <a href="https://pournasengupta.github.io/pages/signup.html" class="w3-bar-item w3-button"> Sign-Up </a>
+               <a href="https://pournasengupta.github.io/pages/projects.html" class="w3-bar-item w3-button"> Projects </a>
+               <a href="https://pournasengupta.github.io/pages/interests.html" class="w3-bar-item w3-button"> Interests </a>
+               <a href="https://pournasengupta.github.io/pages/tictactoe.html" class="w3-bar-item w3-button"> Tic-Tac-Toe </a>
+               <a href="https://pournasengupta.github.io/pages/flickr.html" class="w3-bar-item w3-button"> Flickr Search </a>
+           </div>
+       </nav>
+        <!-- Tic-Tac-Toe Page Container -->
+        <div class="w3-container w3-content" style="max-width:1400px;margin-top:80px; background-color: #edeae5;">   
+            <h1 class="title"><b>Tic-Tac-Toe</b></h1> 
+            <h2 class="subtitle"><b>Homework 2</b></h2>
+    
+            <hr>
+            <div class="container">
+                <form>
+                    <div class="form-group row">
+                      <label for="player1" class="col-sm-2 col-form-label">Player 1:</label>
+                      <div class="col-sm-10">
+                          <input type="text" class="form-control" id="player1_id" placeholder="Enter Name for Player 1">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="player2" class="col-sm-2 col-form-label">Player 2:</label>
+                      <div class="col-sm-10">
+                          <input type="text" class="form-control" id="player2_id" placeholder="Enter Name for Player 2">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <div class="col-sm-5 ">
+                          <button type="button" class="btn btn-primary" onclick="begin_play()">Begin</button>
+                          <button type="button" class="btn btn-primary" onclick="reset_play()">Reset</button>
+                      </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="container">
+                <div id ="turn_info"> The game has not begun.</div>
+                <br/>
+            </div>
+            
+            <div class="container">
+                <table class="table table-bordered">
+                <tbody>
+                    <tr>
+                    <td class="text-center" id="A1">A1</td>
+                    <td class="text-center" id="A2">A2</td>
+                    <td class="text-center" id="A3">A3</td>
+                    </tr>
+                    <tr>
+                    <td class="text-center" id="B1">B1</td>
+                    <td class="text-center" id="B2">B2</td>
+                    <td class="text-center" id="B3">B3</td>
+                    </tr>
+                    <tr>
+                    <td class="text-center" id="C1">C1</td>
+                    <td class="text-center" id="C2">C2</td>
+                    <td class="text-center" id="C3">C3</td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+            
+            <div class="container">
+                <form>
+                    <div class="form-group row">
+                        <label for="player1" class="col-sm-2 col-form-label">Move: </label>
+                        <div class="col-sm-5">
+                            <input type="text" class="form-control" id="move_text_id" placeholder="Cell Number (Ex. A3)" onkeydown="moveEnter(event)">
+                        </div>
+                        <div class="col-sm-5">
+                            <button type="button" class="btn btn-primary" onclick="play()">Play</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <br>
+        <!--Footer, LinkedIn Link-->
+        <nav class="nav-bar navbar-expand-lg">
+            <footer style="text-align: center; background-color: #026670"> 
+                <a class="footer" href="https://www.linkedin.com/in/pournasengupta" style="text-align: center;">
+                    <img class="rounded-circle" src="https://pournasengupta.github.io/images/linkedin.png" alt="" width="30" height="30" style="text-align: right;">
+                </a>
+            </footer>
+        </nav>  
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <!--Local JS-->
+        <script src="https://pournasengupta.github.io/js/rules.js"></script>
+    </body>
+
+</html>
